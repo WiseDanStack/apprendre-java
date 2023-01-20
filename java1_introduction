@@ -1,0 +1,181 @@
+un **OBJET** est une variable à même titre que les autres , sauf que elle possède un type plus complexe appelée ""Classe""
+
+une **Classe** est une entité rassemblant des données (attirbuts) et des méthodes(fonctions) permettant le traitement de celle ci , d'ou l'on parle d'ENCAPSULATION 
+
+l'encapsulation designe le regroupement de données dans une classe.
+
+class Rectangle {
+	
+	int longueur;
+	int largeur ;
+	int origine_x;
+	int origine_y;
+	
+	// méthode de la classe 
+	void deplace (int x, int y) {
+		this.origine_x = this.origine_x + x;
+		this.origine_y = this.origine_y + y;
+	}
+	
+	int surface() {
+		return this.longueur * this.largeur;
+	}
+}
+ ** très pratique l'usage de la variable **this** car elle permet de prendre la variable en cours d'éxecution******************************************************
+ 
+   Pour écrire un programme avec un langage orienté-objet, le programmeur écrit uniquement des **classes** correspondant aux objets de son système. 
+   Les traitements à effectuer sont programmés dans les **méthodes** de ces classes qui peuvent faire appel à des méthodes d'autres classes. 
+   En général, on définit une **classe** dite "exécutable", dont une méthode peut être appelée pour exécuter le programme.
+   
+***L'Encapsulation de données**** dans un objet permet de cacher ou non leur existence aux autres objets du programme. Une donnée peut être déclarée en accès: 
+
+  >>>> public : les autres objets peuvent accéder à la valeur donnée ainsi que la modifier;
+  
+  >>>> privé : les autres objets n'ont pas le droit d'accéder directement à la valeur de cette donnée (ni de la modifier) 
+  En revanche, ils peuvent le faire indirectement par des méthodes de l'objet concerné (si celles-ci existent en accès public)........
+  
+  Méthode constructeur
+  -------------------
+  			
+  			chaque classe doit définir une ou plusieurs méthodes particulières appelées des ""constructeurs""
+  			Un ""contructeur"" est une méthode invoquée lors de la création d'un objet.Cette méthode, qui peut être vide, effectue les opérations nécessaires à l'initialisation d'un objet. 
+  			Chaque constructeur doit avoir le même nom que la classe où il est défini et n'a aucune valeur de retour(c'est l'objet crée qui est renvoyé). 
+  			Dans l'exemple précédent de la classe rectangle, le constructeur initialise la valeur des données encapsulées :
+  	
+  	class Rectangle {
+  	   ....
+  	   Rectangle(int lon, int lar) {
+  	   	this.longueur = lon ;
+  	   	this.largeur = lar ;
+  	   	this.origine_x = 0;
+  	   	this.origine_y = 0;
+  	   
+  	   }
+  	   ....
+  	}
+N.B: 
+
+	plusieurs constructeurs peuvent être définis s'ils acceptent des paramètres d'entrées différents.
+  
+ Remarque importante :
+ -------------------
+ -------------------
+ 			en java, la notion de pointeur est transparente pour le programmeur.il faut néanmoins savoir que **toute variable désignant un objet est un pointeur**. il s'ensuit alors que le passage d'objets comme paramètres d'une méthode est toujours un passage par **réference**. A l'inverse, le passage de variables primitives comme paramètres est toujours un passage par valeur
+ 			
+Java est un langage pseudo compilé 
+java est un langage fortement *****TYPÉ*****
+
+convention de nommage de variable en java : 
+
+		>> camelcase : wiseDanStack   ( cette convention est utilisé pour le nom de variable et de fonction)
+		
+		>> Pascal case : WiseDanStack ( cette convention est utilisé pour le nom de classe ) 
+	        >> snake case : wise_dan_stack ( cette convention est utilisé pour le nommage en python) 
+	        
+	    
+la portée d'une variable correspond à sa durée de vie en fonction de l'endroit où elle a été crée ie si une variable est défini à l'intérieur d'une méthode est n'est pas accéssible à l'extérieure de celle ci (variable locale) 
+
+
+par convention voici la syntaxe d'écriture d'une constance en java : 
+
+           final type NOM_DE_LA_CONSTANCE = VALEUR ;
+           
+           le nom de la constance par convention doit toujours être en majuscule ; 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
